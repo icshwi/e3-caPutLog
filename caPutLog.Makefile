@@ -17,8 +17,8 @@
 # 
 # Author  : Jeong Han Lee
 # email   : han.lee@esss.se
-# Date    : Thursday, October  4 13:10:21 CEST 2018
-# version : 0.0.1
+# Date    : Thursday, October  4 16:17:37 CEST 2018
+# version : 0.0.2
 #
 
 ## The following lines are mandatory, please don't change them.
@@ -47,6 +47,8 @@ SOURCES += $(APPSRC)/caPutLogShellCommands.c
 
 
 DBDS += $(APPSRC)/caPutLog.dbd
+
+SCRIPTS += ../iocsh/caPutLog.iocsh
 
 
 db: 

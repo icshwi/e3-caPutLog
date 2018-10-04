@@ -1,0 +1,25 @@
+# ### CAPUTLOG iocsh  ###
+#- ###################################################
+#- IOCNAME        - IOC NAME
+#- LOG_INET       - EPICS_IOC_LOG_INET
+#
+#- LOG_INET_PORT  - EPICS_IOC_LOG_PORT Optional
+#-                  Default : 7004
+#- LOGDISABLE     - Optional 
+#                   Default : 0  (log enalbed)    
+#- FACNAME        - Optional
+#                   Default : ""  Facility Name
+#- ###################################################
+
+
+epicsEnvSet(EPICS_IOC_LOG_INET, "$(LOG_INET)")
+epicsEnvSet(EPICS_IOC_LOG_PORT, $(LOG_INET_PORT=7004))
+epicsEnvSet(iocLogDisable, $(LIGDISABLE=0))
+
+iocLogPrefix("fac=$(FACNAME=) proc=$(IOCNAME)");
+
+# require has afterInit function
+afterInit("iocLogInit()")
+
+
+
