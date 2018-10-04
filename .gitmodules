@@ -1,0 +1,4 @@
+[submodule "caPutLog"]
+	path = caPutLog
+	url = https://github.com/epics-modules/caPutLog
+	ignore = all
