@@ -12,3 +12,6 @@ core.*
 .cvsignore
 *_old/
 *PVs.list
+*.png
+*.svg
+*.gv
