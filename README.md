@@ -6,7 +6,7 @@ ESS Site-specific EPICS module : caPutLog
 
 ## Dependency Plot
 
-|![caPutLog dep](docs/caPutLo.png)|
+|![caPutLog dep](docs/caPutLog.png)|
 | :---: |
 |**Figure 1** Depdendency Tree. |
 
